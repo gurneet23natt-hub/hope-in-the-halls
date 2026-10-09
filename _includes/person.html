@@ -8,7 +8,7 @@
   {% endif %}
   <div class="person-text">
     <h3>{{ m.name }}</h3>
-    <p class="person-role">{{ m.role }}</p>
+    {% if m.role %}<p class="person-role">{{ m.role }}</p>{% endif %}
     {% if m.bio %}<p>{{ m.bio }}</p>{% endif %}
     {% if m.linkedin %}
       <a class="linkedin" href="{{ m.linkedin }}" target="_blank" rel="noopener">{% include linkedin-icon.svg %}<span>LinkedIn<span class="sr-only"> profile of {{ m.name }}</span></span></a>

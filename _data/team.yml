@@ -42,11 +42,10 @@ core_team:
     linkedin: https://www.linkedin.com/in/allison-montoya-49b76b442/
 
 leadership_committee:
-  - name: Committee Member
-    role: Leadership Committee
-    photo:
+  - name: Sartaj Mutti
+    role:
+    photo: /assets/team/sartaj-mutti.jpg
     linkedin:
-    bio: One or two sentences about this person.
 
 ambassadors:
   # Ambassadors show their high school only (no bio).
