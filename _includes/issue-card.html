@@ -1,0 +1,8 @@
+{% assign p = include.post %}
+<a class="card issue-card" href="{{ p.url | escape }}" target="_blank" rel="noopener">
+  {% if p.image %}<img class="issue-img" src="{{ p.image | escape }}" alt="" loading="lazy">{% endif %}
+  <p class="issue-date">{{ p.date | date: "%B %-d, %Y" }}</p>
+  <h3>{{ p.title | escape }}</h3>
+  {% if p.summary != "" %}<p>{{ p.summary | escape }}</p>{% endif %}
+  <span class="text-link">Read on Substack →</span>
+</a>

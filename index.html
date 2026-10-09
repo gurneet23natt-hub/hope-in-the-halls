@@ -145,6 +145,17 @@ layout: default
     </div>
     <iframe class="substack-embed" src="{{ site.substack }}/embed" title="Subscribe to the Hope in the Halls newsletter on Substack" loading="lazy" scrolling="no"></iframe>
   </div>
+  {% assign issues = site.data.newsletter_posts %}
+  {% if issues.size > 0 %}
+  <div class="container home-issues">
+    <h3>Latest issues</h3>
+    <div class="cards">
+      {% for post in issues limit:3 %}
+        {% include issue-card.html post=post %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </section>
 
 <!-- DONATE -->

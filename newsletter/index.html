@@ -13,7 +13,22 @@ description: Subscribe to the Hope in the Halls newsletter for stories and updat
   </div>
 </section>
 
-<section class="section section-tight" id="subscribe">
+{% assign issues = site.data.newsletter_posts %}
+{% if issues.size > 0 %}
+<section class="section section-tight" id="issues">
+  <div class="container">
+    <h2>Latest issues</h2>
+    <div class="cards">
+      {% for post in issues limit:6 %}
+        {% include issue-card.html post=post %}
+      {% endfor %}
+    </div>
+    <p class="newsletter-link"><a class="text-link" href="{{ site.substack }}/archive" target="_blank" rel="noopener">See every issue on Substack →</a></p>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-tight{% if issues.size > 0 %} section-teal{% endif %}" id="subscribe">
   <div class="container two-col">
     <div>
       <h2>Subscribe</h2>

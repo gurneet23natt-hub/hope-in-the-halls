@@ -169,6 +169,14 @@ p { margin: 0 0 1em; }
 /* ---------- Newsletter (Substack) ---------- */
 .substack-embed { display: block; width: 100%; max-width: 480px; height: 320px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
 .newsletter-link { margin-top: 14px; }
+.issue-card { display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; }
+.issue-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(184, 71, 79, .14); }
+.issue-card h3 { color: var(--ink); }
+.issue-card .text-link { margin-top: auto; }
+.issue-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; margin-bottom: 16px; background: var(--pink-tint); }
+.issue-date { font-size: .9rem; color: var(--muted) !important; margin-bottom: .4em; }
+.home-issues { margin-top: 48px; }
+.home-issues h3 { font-size: 1.4rem; }
 
 /* ---------- Team ---------- */
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 6px; background: var(--pink-tint); border-radius: 999px; width: fit-content; max-width: 100%; margin-bottom: 36px; }
