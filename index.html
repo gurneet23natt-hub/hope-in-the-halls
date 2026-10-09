@@ -104,9 +104,9 @@ layout: default
         <a class="text-link" href="#contact">Sign up to volunteer →</a>
       </article>
       <article class="card card-accent-teal">
-        <h3>Write for our blog</h3>
+        <h3>Write for our newsletter</h3>
         <p>Share stories, project updates, and reflections that inspire others to bring hope to pediatric patients.</p>
-        <a class="text-link" href="{{ '/blog/' | relative_url }}">Visit the blog →</a>
+        <a class="text-link" href="{{ '/newsletter/' | relative_url }}">See the newsletter →</a>
       </article>
       <article class="card card-accent-pink">
         <h3>Lead with us</h3>
@@ -117,24 +117,16 @@ layout: default
   </div>
 </section>
 
-<!-- LATEST POSTS -->
-<section class="section section-pink">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Blog &amp; newsletter</p>
-        <h2>Stories from the halls</h2>
-      </div>
-      <div class="section-links">
-        <a class="text-link" href="{{ '/blog/' | relative_url }}">See all posts →</a>
-        <a class="text-link" href="{{ '/blog/#newsletter' | relative_url }}">Subscribe to our newsletter →</a>
-      </div>
+<!-- NEWSLETTER -->
+<section class="section section-pink" id="newsletter">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">Newsletter</p>
+      <h2>Stories from the halls</h2>
+      <p>Get updates from our toy drives and care package deliveries, stories from our volunteers, and ways to help, right in your inbox. It's free!</p>
+      <a class="text-link" href="{{ site.substack }}" target="_blank" rel="noopener">Read past issues on Substack →</a>
     </div>
-    <div class="cards">
-      {% for post in site.posts limit:3 %}
-        {% include post-card.html post=post %}
-      {% endfor %}
-    </div>
+    <iframe class="substack-embed" src="{{ site.substack }}/embed" title="Subscribe to the Hope in the Halls newsletter on Substack" loading="lazy" scrolling="no"></iframe>
   </div>
 </section>
 
@@ -159,7 +151,7 @@ layout: default
     <div>
       <p class="eyebrow">Contact</p>
       <h2>Let's talk.</h2>
-      <p>Want to volunteer, write for the blog, take on a leadership role, or donate toys? We'd love to hear from you.</p>
+      <p>Want to volunteer, write for the newsletter, take on a leadership role, or donate toys? We'd love to hear from you.</p>
       <ul class="contact-list">
         <li><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         <li><strong>Instagram:</strong> <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener">@{{ site.instagram }}</a></li>
@@ -174,7 +166,7 @@ layout: default
       <label>I'm interested in
         <select name="interest">
           <option>Volunteering</option>
-          <option>Writing for the blog</option>
+          <option>Writing for the newsletter</option>
           <option>A leadership position</option>
           <option>Becoming an ambassador</option>
           <option>Donating toys or supplies</option>

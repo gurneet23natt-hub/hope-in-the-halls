@@ -14,17 +14,12 @@ location: Sacramento, CA
 url: https://hopeinthehalls.org
 baseurl: ""
 
-permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
-# Publish posts even if their date is later today (avoids time-zone surprises)
-future: true
-
-defaults:
-  - scope: { path: "", type: posts }
-    values: { layout: post, category: Blog }
 
 exclude:
   - README.md
-  - WRITING.md
   - Gemfile
   - Gemfile.lock
+
+plugins:
+  - jekyll-redirect-from   # sends old /blog/ links to /newsletter/

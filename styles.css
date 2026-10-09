@@ -135,35 +135,9 @@ p { margin: 0 0 1em; }
 .gallery-thanks { margin: 28px auto 0; max-width: 720px; text-align: center; background: #fff; border: 2px solid var(--pink); border-radius: var(--radius); padding: 18px 24px; font-weight: 700; }
 @media (max-width: 820px) { .gallery { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
 
-/* ---------- Posts ---------- */
-.post-card { display: flex; flex-direction: column; }
-.post-card h3 a { color: var(--ink); text-decoration: none; }
-.post-card h3 a:hover { color: var(--pink-deep); }
-.post-card-img { border-radius: 12px; margin-bottom: 16px; aspect-ratio: 16 / 9; object-fit: cover; width: 100%; }
-.post-meta { font-size: .9rem; color: var(--muted); display: flex; align-items: center; gap: 10px; }
-.post-author { font-size: .9rem; font-weight: 700; color: var(--ink) !important; margin-top: auto; }
-.tag { display: inline-block; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: 3px 10px; border-radius: 999px; }
-.tag-blog { background: var(--teal-tint); color: var(--teal-deep); }
-.tag-newsletter { background: var(--pink-tint); color: var(--pink-deep); }
-.post-wrap { display: contents; }
-.post-wrap[hidden] { display: none; }
-
-.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
-.filter { font: 700 .95rem var(--font-body); padding: .45em 1.1em; border-radius: 999px; border: 2px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; }
-.filter.is-active { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
-
-.post-header .back { display: inline-block; margin-bottom: 20px; }
-.post-body { padding: 8px 0 24px; font-size: 1.125rem; }
-.post-body h2 { font-size: 1.7rem; margin-top: 1.4em; }
-.post-body img { border-radius: 14px; margin: 1.5em 0; }
-.post-body blockquote { margin: 1.5em 0; padding: 4px 0 4px 22px; border-left: 4px solid var(--pink); color: var(--muted); font-style: italic; }
-.post-cover { margin-top: 0 !important; }
-.post-footer { border-top: 1px solid var(--line); padding: 24px 0 72px; color: var(--muted); }
-
 /* ---------- Newsletter (Substack) ---------- */
 .substack-embed { display: block; width: 100%; max-width: 480px; height: 320px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
 .newsletter-link { margin-top: 14px; }
-.section-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 
 /* ---------- Team ---------- */
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 6px; background: var(--pink-tint); border-radius: 999px; width: fit-content; max-width: 100%; margin-bottom: 36px; }
