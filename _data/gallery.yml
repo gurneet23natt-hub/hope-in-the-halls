@@ -10,6 +10,10 @@ title: From our last toy drive
 intro: >-
   Toys donated by our community, packed up and delivered to pediatric
   patients at Kaiser Permanente Roseville.
+# Optional thank-you shown under the photos. Delete the line to hide it.
+thanks: >-
+  A big thank you to the Westlake Charter High School Key Club for donating
+  cards for our toy drive!
 photos:
   - src: /assets/toy-drive/packed-car.jpg
     thumb: /assets/toy-drive/packed-car-thumb.jpg

@@ -83,6 +83,9 @@ layout: default
         </li>
         {% endfor %}
       </ul>
+      {% if g.thanks %}
+      <p class="gallery-thanks"><span aria-hidden="true">💗</span> {{ g.thanks }}</p>
+      {% endif %}
     </div>
     {% endif %}
   </div>
