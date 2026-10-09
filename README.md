@@ -11,6 +11,7 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 | Email, Instagram, GoFundMe link, EIN, location | `_config.yml` |
 | Homepage text (mission, projects, donate, contact) | `index.html` |
 | Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
+| Toy drive photo gallery on the homepage | `_data/gallery.yml` (photos go in `assets/toy-drive/`) |
 | Blog posts and newsletters | Add a file to `_posts/`. See **[WRITING.md](WRITING.md)** |
 | Menu and footer | `_includes/header.html`, `_includes/footer.html` |
 | Colors and fonts | Top of `styles.css` |
