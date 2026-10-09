@@ -2,7 +2,24 @@
 layout: default
 title: Our Team
 permalink: /team/
-description: Meet the founders and team behind Hope in the Halls.
+description: Meet the founders, core team, leadership committee, and ambassadors behind Hope in the Halls.
+tabs:
+  - id: founders
+    label: Founders
+    heading: Our founders
+    intro: The people who started Hope in the Halls.
+  - id: core_team
+    label: Core Team
+    heading: Core team
+    intro: The team that keeps our projects running day to day.
+  - id: leadership_committee
+    label: Leadership Committee
+    heading: Leadership committee
+    intro: Students and community members helping shape where Hope in the Halls goes next.
+  - id: ambassadors
+    label: Ambassadors
+    heading: Ambassadors
+    intro: Our ambassadors spread the word and bring Hope in the Halls to their schools and communities.
 ---
 <section class="page-hero">
   <div class="container">
@@ -12,34 +29,41 @@ description: Meet the founders and team behind Hope in the Halls.
   </div>
 </section>
 
-<section class="section section-tight">
+<section class="section section-tight team-section">
   <div class="container">
-    <h2>Our founders</h2>
-    <div class="founders">
-      {% for member in site.data.team.founders %}
-        {% include person.html member=member large=true %}
+    <div class="tabs" role="tablist" aria-label="Team groups">
+      {% for tab in page.tabs %}
+        <a class="tab" role="tab" id="tab-{{ tab.id }}" href="#{{ tab.id | replace: '_', '-' }}"
+           aria-controls="{{ tab.id | replace: '_', '-' }}"
+           aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+           {% unless forloop.first %}tabindex="-1"{% endunless %}>{{ tab.label }}</a>
       {% endfor %}
     </div>
+
+    {% for tab in page.tabs %}
+      {% assign members = site.data.team[tab.id] %}
+      {% if tab.id == 'founders' %}{% assign large = true %}{% else %}{% assign large = false %}{% endif %}
+      <div class="tab-panel" role="tabpanel" id="{{ tab.id | replace: '_', '-' }}" aria-labelledby="tab-{{ tab.id }}" tabindex="0">
+        <h2>{{ tab.heading }}</h2>
+        <p class="section-intro">{{ tab.intro }}</p>
+        {% if members and members.size > 0 %}
+          <div class="{% if tab.id == 'founders' %}founders{% else %}team-grid{% endif %}">
+            {% for member in members %}
+              {% include person.html member=member large=large %}
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="coming-soon">Coming soon! Interested in joining? <a href="{{ '/#contact' | relative_url }}">Get in touch</a>.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </section>
 
-{% if site.data.team.team.size > 0 %}
-<section class="section section-teal section-tight">
-  <div class="container">
-    <h2>Our team</h2>
-    <div class="team-grid">
-      {% for member in site.data.team.team %}
-        {% include person.html member=member %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-<section class="section section-tight">
+<section class="section section-pink section-tight">
   <div class="container join">
     <h2>Want to join the team?</h2>
-    <p>We're looking for students and community members to volunteer, write, and lead.</p>
+    <p>We're looking for students and community members to volunteer, write, lead, and be ambassadors.</p>
     <a class="btn" href="{{ '/#contact' | relative_url }}">Get in touch</a>
   </div>
 </section>

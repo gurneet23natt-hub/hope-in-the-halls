@@ -10,7 +10,7 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 | --- | --- |
 | Email, Instagram, GoFundMe link, EIN, location | `_config.yml` |
 | Homepage text (mission, projects, donate, contact) | `index.html` |
-| Founders and team: names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
+| Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
 | Blog posts and newsletters | Add a file to `_posts/`. See **[WRITING.md](WRITING.md)** |
 | Menu and footer | `_includes/header.html`, `_includes/footer.html` |
 | Colors and fonts | Top of `styles.css` |
@@ -20,6 +20,8 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 1. Upload a photo (square works best) to `assets/team/`, e.g. `assets/team/jane-doe.jpg`.
 2. In `_data/team.yml`, set that person's `photo: /assets/team/jane-doe.jpg`.
 3. Paste their LinkedIn profile URL into `linkedin:`. Leave it blank to hide the button.
+
+People are grouped by tab: `founders`, `core_team`, `leadership_committee`, `ambassadors`. Each tab has its own shareable link, e.g. `/team/#ambassadors`. A tab with nobody in it shows "Coming soon".
 
 ## Publishing with GitHub Pages
 

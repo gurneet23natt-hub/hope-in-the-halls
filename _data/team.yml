@@ -1,10 +1,17 @@
 # ─────────────────────────────────────────────────────────────
-# Team members shown on the "Our Team" page.
+# People shown on the "Our Team" page, one list per tab:
+#   founders · core_team · leadership_committee · ambassadors
 #
-# To add a photo: upload a square-ish image to assets/team/
-#   (e.g. assets/team/jane-doe.jpg) and set `photo: /assets/team/jane-doe.jpg`
-# Leave `photo` blank to show the person's initials instead.
-# Leave `linkedin` blank to hide the LinkedIn button.
+# For each person:
+#   name:      Full name
+#   role:      Title (e.g. Co-Founder, Ambassador – Roseville High)
+#   photo:     Upload a square-ish image to assets/team/ and put its path,
+#              e.g. /assets/team/jane-doe.jpg. Leave blank to show initials.
+#   linkedin:  Full LinkedIn profile URL. Leave blank to hide the button.
+#   bio:       A short "about me".
+#
+# To add someone, copy a block (from "- name:" to "bio:") and edit it.
+# A tab with no one in it shows a "coming soon" message.
 # ─────────────────────────────────────────────────────────────
 
 founders:
@@ -24,7 +31,7 @@ founders:
       Write a short "about me" here: who you are, what school or work you're
       part of, and why you started Hope in the Halls.
 
-team:
+core_team:
   - name: Team Member
     role: Volunteer Coordinator
     photo:
@@ -39,6 +46,20 @@ team:
 
   - name: Team Member
     role: Outreach Lead
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+leadership_committee:
+  - name: Committee Member
+    role: Leadership Committee
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+ambassadors:
+  - name: Ambassador Name
+    role: Ambassador
     photo:
     linkedin:
     bio: One or two sentences about this person.
