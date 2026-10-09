@@ -223,4 +223,5 @@ p { margin: 0 0 1em; }
 
 /* Real photos: tall rounded rectangle so full-length photos fit */
 .person img.avatar { width: 100%; max-width: 260px; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius); object-fit: cover; object-position: top; }
-.person-large img.avatar { max-width: 340px; }
+/* Founders: show the whole photo at its natural shape (e.g. landscape) */
+.person-large img.avatar { max-width: 100%; aspect-ratio: auto; object-fit: contain; }
