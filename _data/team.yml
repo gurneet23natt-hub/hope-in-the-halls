@@ -76,7 +76,7 @@ core_team:
 
   - name: Cali Kim
     role: Social Media Editor
-    photo:
+    photo: /assets/team/cali-kim.jpg
     linkedin:
 
   - name: Sydney Duong
