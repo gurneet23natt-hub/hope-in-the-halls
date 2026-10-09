@@ -15,13 +15,17 @@
 # ─────────────────────────────────────────────────────────────
 
 founders:
-  - name: Founder Name
-    role: Co-Founder
-    photo:
-    linkedin: https://www.linkedin.com/in/your-profile/
+  - name: Gianna Natt
+    role: Founder
+    photo: /assets/team/gianna-natt.jpg
+    linkedin:
     bio: >-
-      Write a short "about me" here: who you are, what school or work you're
-      part of, and why you started Hope in the Halls.
+      Living with a chronic illness and spending so much time in hospitals often
+      made me feel lonely and disconnected from life outside my hospital room.
+      Those experiences inspired me to start Hope in the Halls so I could help
+      other children feel supported and less alone. I wanted to turn what I went
+      through into something meaningful by bringing comfort, joy, and hope to
+      their hospital stays.
 
   - name: Founder Name
     role: Co-Founder
