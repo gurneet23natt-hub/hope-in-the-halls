@@ -60,6 +60,11 @@ leadership_committee:
     photo: /assets/team/maehar-dhillon.jpg
     linkedin: https://www.linkedin.com/in/maehar-dhillon-78384b442/
 
+  - name: Maggie Farrell
+    role:
+    photo: /assets/team/maggie-farrell.jpg
+    linkedin: https://www.linkedin.com/in/maggie-farrell-48376b442/
+
 ambassadors:
   # Ambassadors show their high school only (no bio).
   - name: Anshu Gonuguntla
