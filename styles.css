@@ -204,6 +204,8 @@ p { margin: 0 0 1em; }
 .person-large .avatar { width: 170px; height: 170px; border-color: var(--pink); }
 .avatar-initials { display: grid; place-items: center; background: var(--teal-tint); color: var(--teal-deep); font: 600 2.4rem var(--font-head); }
 .person-large .avatar-initials { background: var(--pink-tint); color: var(--pink-deep); font-size: 3rem; }
+/* Placeholder (no photo yet): same size and shape as a real team photo */
+.team-grid .avatar-initials { width: 100%; max-width: 260px; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius); font-size: 3.2rem; }
 .linkedin { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; text-decoration: none; color: #0a66c2; font-size: .95rem; }
 .linkedin svg { width: 20px; height: 20px; }
 .linkedin:hover { text-decoration: underline; }
