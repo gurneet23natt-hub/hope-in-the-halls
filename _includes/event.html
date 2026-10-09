@@ -1,0 +1,40 @@
+{% assign e = include.event %}
+{% assign day = e.date | date: "%Y-%m-%d" %}
+{% capture start_t %}{{ day }} {{ e.start }}{% endcapture %}
+{% capture end_t %}{{ day }} {{ e.end }}{% endcapture %}
+{% capture cal_dates %}{{ e.date | date: "%Y%m%d" }}T{{ e.start | remove: ":" }}00/{{ e.date | date: "%Y%m%d" }}T{{ e.end | remove: ":" }}00{% endcapture %}
+<article class="event{% if include.compact %} event-compact{% endif %}" data-date="{{ day }}">
+  <div class="event-date" aria-hidden="true">
+    <span class="event-month">{{ e.date | date: "%b" }}</span>
+    <span class="event-day">{{ e.date | date: "%-d" }}</span>
+  </div>
+  <div class="event-body">
+    <p class="event-kind">{{ e.kind }}</p>
+    <h3>{{ e.title }}</h3>
+    <ul class="event-facts">
+      <li><strong>When:</strong> {{ e.date | date: "%A, %B %-d, %Y" }}, {{ start_t | date: "%-I:%M %p" }} – {{ end_t | date: "%-I:%M %p" }}</li>
+      <li><strong>Where:</strong> {{ e.place }}, <a href="https://www.google.com/maps/search/?api=1&amp;query={{ e.address | url_encode }}" target="_blank" rel="noopener">{{ e.address }}</a></li>
+    </ul>
+    <p>{{ e.summary }}</p>
+    {% if include.compact %}
+      <a class="text-link" href="{{ '/events/' | relative_url }}">Details &amp; flyer →</a>
+    {% else %}
+      {% if e.steps %}
+      <ul class="event-steps">
+        {% for s in e.steps %}<li>{{ s }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      <div class="event-actions">
+        <a class="btn btn-small" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ e.title | url_encode }}&amp;dates={{ cal_dates }}&amp;ctz=America/Los_Angeles&amp;location={{ e.address | url_encode }}&amp;details={{ e.summary | url_encode }}" target="_blank" rel="noopener">Add to Google Calendar</a>
+        {% if e.flyer_pdf %}<a class="btn btn-small btn-ghost" href="{{ e.flyer_pdf | relative_url }}" download>Download flyer (PDF)</a>{% endif %}
+        {% for l in e.links %}<a class="text-link" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.text }} →</a>{% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  {% if e.flyer and include.compact == nil %}
+  <a class="event-flyer" href="{{ e.flyer | relative_url }}" target="_blank" rel="noopener">
+    <img src="{{ e.flyer | relative_url }}" alt="{{ e.flyer_alt }}" loading="lazy">
+    <span>View full flyer</span>
+  </a>
+  {% endif %}
+</article>

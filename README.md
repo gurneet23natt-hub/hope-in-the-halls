@@ -11,6 +11,7 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 | Email, Instagram, GoFundMe link, location | `_config.yml` |
 | Homepage text (mission, projects, donate, contact) | `index.html` |
 | Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
+| Events (fundraisers, drives) | `_data/events.yml`; flyers go in `assets/events/`. Past events hide automatically |
 | Toy drive photo gallery on the homepage | `_data/gallery.yml` (photos go in `assets/toy-drive/`) |
 | Newsletter | Written and sent on Substack (hopeinthehalls.substack.com); the signup form is embedded on the Newsletter page. Link set in `_config.yml` |
 | Menu and footer | `_includes/header.html`, `_includes/footer.html` |
