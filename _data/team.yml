@@ -87,7 +87,7 @@ core_team:
   - name: Evelyn Huynh
     role: Historian
     photo:
-    linkedin:
+    linkedin: https://www.linkedin.com/in/evelyn-huynh-551709442/
 
   - name: Yzer Chong
     role: Historian
