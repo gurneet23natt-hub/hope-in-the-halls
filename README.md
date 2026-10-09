@@ -12,7 +12,7 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 | Homepage text (mission, projects, donate, contact) | `index.html` |
 | Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
 | Toy drive photo gallery on the homepage | `_data/gallery.yml` (photos go in `assets/toy-drive/`) |
-| Blog posts and newsletters | Add a file to `_posts/`. See **[WRITING.md](WRITING.md)** |
+| Newsletter | Written and sent on Substack (hopeinthehalls.substack.com); the signup form is embedded on the Newsletter page. Link set in `_config.yml` |
 | Menu and footer | `_includes/header.html`, `_includes/footer.html` |
 | Colors and fonts | Top of `styles.css` |
 

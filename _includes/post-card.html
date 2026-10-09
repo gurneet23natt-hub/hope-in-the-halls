@@ -1,8 +1,0 @@
-{% assign p = include.post %}
-<article class="card post-card">
-  {% if p.image %}<img class="post-card-img" src="{{ p.image | relative_url }}" alt="" loading="lazy">{% endif %}
-  <p class="post-meta"><span class="tag tag-{{ p.category | downcase }}">{{ p.category }}</span> {{ p.date | date: "%B %-d, %Y" }}</p>
-  <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
-  <p>{{ p.excerpt | strip_html | truncatewords: 28 }}</p>
-  {% if p.author %}<p class="post-author">By {{ p.author }}</p>{% endif %}
-</article>
