@@ -122,7 +122,7 @@ leadership_committee:
 
   - name: Madelyn Almeria
     role:
-    photo:
+    photo: /assets/team/madelyn-almeria.jpg
     linkedin:
 
   - name: Hailey Gutierrez
