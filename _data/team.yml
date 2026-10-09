@@ -70,6 +70,31 @@ leadership_committee:
     photo: /assets/team/maggie-farrell.jpg
     linkedin: https://www.linkedin.com/in/maggie-farrell-48376b442/
 
+  - name: Kaylana Duong
+    role:
+    photo:
+    linkedin:
+
+  - name: Madelyn Almeria
+    role:
+    photo:
+    linkedin:
+
+  - name: Hailey Gutierrez
+    role:
+    photo:
+    linkedin:
+
+  - name: Muskaan Sandhu
+    role:
+    photo:
+    linkedin:
+
+  - name: Abhijot Takhar
+    role:
+    photo:
+    linkedin:
+
 ambassadors:
   # Ambassadors show their high school only (no bio).
   - name: Anshu Gonuguntla
