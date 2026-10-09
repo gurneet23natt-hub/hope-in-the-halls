@@ -39,6 +39,7 @@ p { margin: 0 0 1em; }
 .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 700; color: var(--pink-deep); margin-bottom: .75em; }
 .hl-pink { color: var(--pink-deep); }
 .hl-teal { color: var(--teal-deep); }
+.hl-orange { color: #d9620f; } /* warm orange, readable at headline size */
 
 /* ---------- Buttons ---------- */
 .btn {
