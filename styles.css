@@ -246,3 +246,6 @@ p { margin: 0 0 1em; }
 .person img.avatar { width: 100%; max-width: 260px; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius); object-fit: cover; object-position: top; }
 /* Founders: show the whole photo at its natural shape (e.g. landscape) */
 .person-large img.avatar { max-width: 100%; aspect-ratio: auto; object-fit: contain; }
+/* Founder photos share one height; tall photos show whole and centered */
+.founder-photo { aspect-ratio: 1.573; display: flex; justify-content: center; margin: 0 auto 16px; }
+.founder-photo img.avatar { width: auto; height: 100%; max-width: 100%; margin: 0; object-fit: cover; }
