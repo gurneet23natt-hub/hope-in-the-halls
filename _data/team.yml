@@ -49,6 +49,51 @@ core_team:
     photo: /assets/team/allison-montoya-sanchez.jpg
     linkedin: https://www.linkedin.com/in/allison-montoya-49b76b442/
 
+  - name: Stella Pease-Price
+    role: Fundraising Task Coordinator
+    photo:
+    linkedin:
+
+  - name: Niky Tefft
+    role: Service Task Coordinator
+    photo:
+    linkedin:
+
+  - name: Genesis Andrews
+    role: Service Task Coordinator
+    photo:
+    linkedin:
+
+  - name: Anshika Bhatoa
+    role: Newsletter Writer
+    photo:
+    linkedin:
+
+  - name: Mahit Katyal
+    role: Newsletter Writer
+    photo:
+    linkedin:
+
+  - name: Cali Kim
+    role: Social Media Editor
+    photo:
+    linkedin:
+
+  - name: Sydney Duong
+    role: Social Media Editor
+    photo:
+    linkedin:
+
+  - name: Evelyn Huynh
+    role: Historian
+    photo:
+    linkedin:
+
+  - name: Yzer Chong
+    role: Historian
+    photo:
+    linkedin:
+
 leadership_committee:
   - name: Sartaj Mutti
     role:
