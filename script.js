@@ -53,3 +53,17 @@ if (tabs.length) {
   window.addEventListener('hashchange', fromHash);
   fromHash();
 }
+
+// Events: hide events once their day has passed (the site isn't rebuilt daily)
+const events = document.querySelectorAll('.event[data-date]');
+if (events.length) {
+  const today = new Date();
+  const todayStr = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
+  events.forEach((ev) => { if (ev.dataset.date < todayStr) ev.hidden = true; });
+  document.querySelectorAll('.event-list').forEach((list) => {
+    const anyLeft = list.querySelector('.event:not([hidden])');
+    const empty = list.parentElement.querySelector('.events-empty');
+    if (empty) empty.hidden = !!anyLeft;
+    if (!anyLeft && list.closest('.home-events')) list.closest('.home-events').hidden = true;
+  });
+}

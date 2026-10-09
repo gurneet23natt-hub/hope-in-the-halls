@@ -1,0 +1,33 @@
+---
+layout: default
+title: Events
+permalink: /events/
+description: Upcoming Hope in the Halls fundraisers and events in the Sacramento area.
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Events</p>
+    <h1>Upcoming events</h1>
+    <p class="lead">Join us at our fundraisers and events around Sacramento. Every one helps bring comfort, joy, and hope to pediatric patients.</p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    {% assign upcoming = site.data.events | sort: "date" %}
+    <div class="event-list">
+      {% for event in upcoming %}
+        {% include event.html event=event %}
+      {% endfor %}
+    </div>
+    <p class="events-empty"{% if upcoming.size > 0 %} hidden{% endif %}>No upcoming events right now. Check back soon, or follow us on <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener">Instagram</a> for updates!</p>
+  </div>
+</section>
+
+<section class="section section-pink section-tight">
+  <div class="container join">
+    <h2>Want to host a fundraiser with us?</h2>
+    <p>Businesses, schools, and clubs can partner with Hope in the Halls on a fundraiser or donation drive.</p>
+    <a class="btn" href="{{ '/#contact' | relative_url }}">Get in touch</a>
+  </div>
+</section>

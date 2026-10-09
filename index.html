@@ -91,6 +91,23 @@ layout: default
   </div>
 </section>
 
+<!-- UPCOMING EVENTS -->
+{% assign upcoming = site.data.events | sort: "date" %}
+{% if upcoming.size > 0 %}
+<section class="section section-tight home-events" id="events">
+  <div class="container">
+    <p class="eyebrow">Upcoming events</p>
+    <h2>Come support us</h2>
+    <div class="event-list">
+      {% for event in upcoming limit:2 %}
+        {% include event.html event=event compact=true %}
+      {% endfor %}
+    </div>
+    <a class="text-link" href="{{ '/events/' | relative_url }}">See all events →</a>
+  </div>
+</section>
+{% endif %}
+
 <!-- GET INVOLVED -->
 <section id="involved" class="section">
   <div class="container">

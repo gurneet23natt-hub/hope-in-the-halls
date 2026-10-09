@@ -1,0 +1,60 @@
+# ─────────────────────────────────────────────────────────────
+# Events shown on the "Events" page (and the next one on the homepage).
+# Events disappear from the page automatically after their date passes.
+#
+# To add an event, copy a block (from "- title:" down) and edit it.
+#   date:      YYYY-MM-DD
+#   start/end: 24-hour time, e.g. "07:00" and "21:00"
+#   flyer:     image in assets/events/ (shown on the page)
+#   flyer_pdf: optional PDF in assets/events/ for a "Download flyer" button
+#   steps:     short bullet points explaining how to take part
+#   links:     optional buttons, each with text + url
+# ─────────────────────────────────────────────────────────────
+
+- title: Panera Bread Fundraiser
+  kind: Fundraiser
+  date: 2026-12-16
+  start: "07:00"
+  end: "21:00"
+  place: Panera Bread
+  address: 2731 Del Paso Rd, Sacramento, CA
+  summary: >-
+    Grab a meal at Panera and 20% of net sales from your order will be donated
+    to Hope in the Halls!
+  steps:
+    - "In the cafe: bring the flyer or show it on your phone when you order."
+    - "Online, in the Panera app, or at the in-cafe kiosk: use code FUND4U."
+    - Online orders placed all day at this cafe count toward the total.
+  flyer: /assets/events/2026-12-16-panera.jpg
+  flyer_alt: >-
+    Panera Bread fundraiser flyer for Hope in the Halls, December 16, 2026,
+    7 am to 9 pm at 2731 Del Paso Rd, Sacramento. Use code FUND4U.
+  links:
+    - text: Order at panerabread.com
+      url: https://www.panerabread.com
+
+- title: Blood Drive with the American Red Cross
+  kind: Blood Drive
+  date: 2026-12-28
+  start: "09:00"
+  end: "14:00"
+  place: American Red Cross – Community Room
+  address: 1565 Exposition Blvd, Sacramento, CA 95815
+  summary: >-
+    Give something that means something. Donate blood at the Hope in the Halls
+    blood drive.
+  steps:
+    - "Schedule your appointment: call 1-800-RED CROSS (1-800-733-2767), visit RedCrossBlood.org and enter sponsor code HOPEINTHEHALLS, or use the Blood Donor App."
+    - Save up to 15 minutes at your donation with RapidPass.
+    - Everyone who comes to give blood will receive an exclusive Red Cross long-sleeved T-shirt, while supplies last.
+  flyer: /assets/events/2026-12-28-blood-drive.jpg
+  flyer_alt: >-
+    American Red Cross flyer for the Hope in the Halls Blood Drive, Monday,
+    December 28, 9 a.m. to 2 p.m. at 1565 Exposition Blvd, Sacramento.
+    Sponsor code HOPEINTHEHALLS.
+  flyer_pdf: /assets/events/2026-12-28-blood-drive.pdf
+  links:
+    - text: Schedule at RedCrossBlood.org
+      url: https://www.redcrossblood.org
+    - text: Learn about RapidPass
+      url: https://www.redcrossblood.org/RapidPass
