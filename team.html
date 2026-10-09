@@ -1,0 +1,45 @@
+---
+layout: default
+title: Our Team
+permalink: /team/
+description: Meet the founders and team behind Hope in the Halls.
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Our team</p>
+    <h1>The people behind the hope</h1>
+    <p class="lead">Hope in the Halls is run by students and community members who believe every child in the hospital deserves comfort, joy, and hope.</p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <h2>Our founders</h2>
+    <div class="founders">
+      {% for member in site.data.team.founders %}
+        {% include person.html member=member large=true %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if site.data.team.team.size > 0 %}
+<section class="section section-teal section-tight">
+  <div class="container">
+    <h2>Our team</h2>
+    <div class="team-grid">
+      {% for member in site.data.team.team %}
+        {% include person.html member=member %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-tight">
+  <div class="container join">
+    <h2>Want to join the team?</h2>
+    <p>We're looking for students and community members to volunteer, write, and lead.</p>
+    <a class="btn" href="{{ '/#contact' | relative_url }}">Get in touch</a>
+  </div>
+</section>

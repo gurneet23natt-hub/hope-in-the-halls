@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────
+# Team members shown on the "Our Team" page.
+#
+# To add a photo: upload a square-ish image to assets/team/
+#   (e.g. assets/team/jane-doe.jpg) and set `photo: /assets/team/jane-doe.jpg`
+# Leave `photo` blank to show the person's initials instead.
+# Leave `linkedin` blank to hide the LinkedIn button.
+# ─────────────────────────────────────────────────────────────
+
+founders:
+  - name: Founder Name
+    role: Co-Founder
+    photo:
+    linkedin: https://www.linkedin.com/in/your-profile/
+    bio: >-
+      Write a short "about me" here: who you are, what school or work you're
+      part of, and why you started Hope in the Halls.
+
+  - name: Founder Name
+    role: Co-Founder
+    photo:
+    linkedin: https://www.linkedin.com/in/your-profile/
+    bio: >-
+      Write a short "about me" here: who you are, what school or work you're
+      part of, and why you started Hope in the Halls.
+
+team:
+  - name: Team Member
+    role: Volunteer Coordinator
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+  - name: Team Member
+    role: Blog Editor
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+  - name: Team Member
+    role: Outreach Lead
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.

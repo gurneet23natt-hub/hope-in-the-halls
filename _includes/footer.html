@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <img class="footer-bear" src="{{ '/assets/bear.png' | relative_url }}" alt="" width="72" height="70">
+      <p class="footer-title">Hope in the Halls</p>
+      <p>{{ site.tagline }}</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="{{ '/team/' | relative_url }}">Our Team</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog &amp; Newsletter</a>
+      <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener">Instagram</a>
+      <a href="{{ site.gofundme }}" target="_blank" rel="noopener">GoFundMe</a>
+      <a href="mailto:{{ site.email }}">Email</a>
+    </nav>
+    <p class="copyright">© {{ 'now' | date: '%Y' }} Hope in the Halls · 501(c)(3) nonprofit · EIN {{ site.ein }} · {{ site.location }}</p>
+  </div>
+</footer>

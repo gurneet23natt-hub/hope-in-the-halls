@@ -1,45 +1,42 @@
 # Hope in the Halls
 
-Website for Hope in the Halls, a nonprofit organization. It's a plain HTML/CSS/JS site with no build step, so anyone can edit it.
+Website for **Hope in the Halls**, a Sacramento nonprofit bringing comfort, joy, and hope to pediatric patients through toy drives and care packages.
 
-## Files
+Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically, so there is nothing to build by hand. Edit a file on GitHub and the site updates.
 
-| File | What it is |
+## Common edits
+
+| To change… | Edit this |
 | --- | --- |
-| `index.html` | All page content (Mission, Projects, Get Involved, Blog, Donate, Contact) |
-| `styles.css` | Styling. Brand colors and fonts are at the top under `:root` |
-| `script.js` | Mobile menu and footer year |
-| `assets/favicon.svg` | Logo / browser tab icon |
+| Email, Instagram, GoFundMe link, EIN, location | `_config.yml` |
+| Homepage text (mission, projects, donate, contact) | `index.html` |
+| Founders and team: names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
+| Blog posts and newsletters | Add a file to `_posts/`. See **[WRITING.md](WRITING.md)** |
+| Menu and footer | `_includes/header.html`, `_includes/footer.html` |
+| Colors and fonts | Top of `styles.css` |
 
-## Preview locally
+### Adding team photos
 
-Open `index.html` in a browser, or run:
+1. Upload a photo (square works best) to `assets/team/`, e.g. `assets/team/jane-doe.jpg`.
+2. In `_data/team.yml`, set that person's `photo: /assets/team/jane-doe.jpg`.
+3. Paste their LinkedIn profile URL into `linkedin:`. Leave it blank to hide the button.
 
-```sh
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
-
-## Making it yours
-
-Search `index.html` for `EDIT:` comments. Each marks content to replace:
-
-- [ ] If you're a registered 501(c)(3), uncomment the EIN line in the donate section
-- [ ] Logo in `assets/favicon.svg`, if you have one
-
-### Receiving contact form messages
-
-The form currently opens the visitor's email app. To get submissions in your inbox without that step, sign up for a free form service such as [Formspree](https://formspree.io), then change the form tag to:
-
-```html
-<form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="post">
-```
-
-## Publishing for free with GitHub Pages
+## Publishing with GitHub Pages
 
 1. Merge this branch into `main`.
-2. In the repo on GitHub: **Settings → Pages**.
-3. Under "Build and deployment", choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-4. In a minute or two your site is live at `https://<your-username>.github.io/hope-in-the-halls/`.
+2. On GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
+3. The site goes live at `https://gurneet23natt-hub.github.io/hope-in-the-halls/` within a couple of minutes.
 
-To use a custom domain (like `hopeinthehalls.org`), enter it in the same Pages settings and follow GitHub's DNS instructions.
+**Custom domain:** if you buy a domain like `hopeinthehalls.org`, enter it in the Pages settings, then change `baseurl` in `_config.yml` to `""` and `url` to your domain.
+
+## Previewing locally (optional)
+
+```sh
+bundle install
+bundle exec jekyll serve
+# visit http://localhost:4000/hope-in-the-halls/
+```
+
+## Contact form
+
+The form opens the visitor's email app. To receive messages directly, sign up for a free service like [Formspree](https://formspree.io) and set the form's `action` in `index.html` to the URL it gives you.

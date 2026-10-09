@@ -1,0 +1,30 @@
+title: Hope in the Halls
+description: >-
+  Hope in the Halls uplifts the spirits of children in hospitals through toy
+  drives and care packages, bringing comfort, joy, and hope to pediatric patients.
+tagline: Bringing comfort. Spreading joy. Restoring hope.
+email: hopeinthehallssacramento@gmail.com
+instagram: hopeinthehallssacramento
+gofundme: https://gofund.me/ee142f303
+ein: 42-4466539
+location: Sacramento, CA
+
+# The site is served from https://gurneet23natt-hub.github.io/hope-in-the-halls/
+# If you move to a custom domain (e.g. hopeinthehalls.org), change baseurl to "".
+url: https://gurneet23natt-hub.github.io
+baseurl: /hope-in-the-halls
+
+permalink: /blog/:year/:month/:title/
+timezone: America/Los_Angeles
+# Publish posts even if their date is later today (avoids time-zone surprises)
+future: true
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, category: Blog }
+
+exclude:
+  - README.md
+  - WRITING.md
+  - Gemfile
+  - Gemfile.lock
