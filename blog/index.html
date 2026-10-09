@@ -31,12 +31,13 @@ description: Stories, project updates, and newsletters from Hope in the Halls.
   </div>
 </section>
 
-<section class="section section-pink section-tight">
+<section class="section section-pink section-tight" id="newsletter">
   <div class="container two-col">
     <div>
       <h2>Get the newsletter</h2>
-      <p>Want our newsletter in your inbox? Email us and we'll add you to the list.</p>
-      <a class="btn" href="mailto:{{ site.email }}?subject=Add%20me%20to%20the%20newsletter">Join the newsletter</a>
+      <p>Get updates from Hope in the Halls delivered to your inbox. It's free! Enter your email to subscribe.</p>
+      <iframe class="substack-embed" src="{{ site.substack }}/embed" title="Subscribe to the Hope in the Halls newsletter on Substack" loading="lazy" scrolling="no"></iframe>
+      <p class="newsletter-link"><a class="text-link" href="{{ site.substack }}" target="_blank" rel="noopener">Read past issues on Substack →</a></p>
     </div>
     <div>
       <h2>Write for us</h2>
