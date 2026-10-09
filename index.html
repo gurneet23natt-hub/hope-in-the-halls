@@ -125,7 +125,10 @@ layout: default
         <p class="eyebrow">Blog &amp; newsletter</p>
         <h2>Stories from the halls</h2>
       </div>
-      <a class="text-link" href="{{ '/blog/' | relative_url }}">See all posts →</a>
+      <div class="section-links">
+        <a class="text-link" href="{{ '/blog/' | relative_url }}">See all posts →</a>
+        <a class="text-link" href="{{ '/blog/#newsletter' | relative_url }}">Subscribe to our newsletter →</a>
+      </div>
     </div>
     <div class="cards">
       {% for post in site.posts limit:3 %}
@@ -174,7 +177,6 @@ layout: default
           <option>Writing for the blog</option>
           <option>A leadership position</option>
           <option>Becoming an ambassador</option>
-          <option>Joining the newsletter</option>
           <option>Donating toys or supplies</option>
           <option>Something else</option>
         </select>

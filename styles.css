@@ -160,6 +160,11 @@ p { margin: 0 0 1em; }
 .post-cover { margin-top: 0 !important; }
 .post-footer { border-top: 1px solid var(--line); padding: 24px 0 72px; color: var(--muted); }
 
+/* ---------- Newsletter (Substack) ---------- */
+.substack-embed { display: block; width: 100%; max-width: 480px; height: 320px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.newsletter-link { margin-top: 14px; }
+.section-links { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+
 /* ---------- Team ---------- */
 .tabs { display: flex; gap: 8px; flex-wrap: wrap; padding: 6px; background: var(--pink-tint); border-radius: 999px; width: fit-content; max-width: 100%; margin-bottom: 36px; }
 .tab { padding: .6em 1.3em; border-radius: 999px; font-weight: 700; color: var(--ink); text-decoration: none; white-space: nowrap; transition: background .2s, color .2s; }
