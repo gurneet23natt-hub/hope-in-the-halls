@@ -55,6 +55,11 @@ leadership_committee:
     photo: /assets/team/jovan-venethongkham.jpg
     linkedin:
 
+  - name: Maehar Dhillon
+    role:
+    photo: /assets/team/maehar-dhillon.jpg
+    linkedin: https://www.linkedin.com/in/maehar-dhillon-78384b442/
+
 ambassadors:
   # Ambassadors show their high school only (no bio).
   - name: Anshu Gonuguntla
