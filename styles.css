@@ -117,9 +117,7 @@ p { margin: 0 0 1em; }
 .donate h2 { color: #fff; }
 .donate-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
 .donate-box { background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .2); border-radius: var(--radius); padding: 28px; }
-.amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
-.amount { text-align: center; padding: 12px 0; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .35); color: #fff; text-decoration: none; font-weight: 600; }
-.amount:hover { background: rgba(255, 255, 255, .15); }
+.donate-note { margin: 0 0 16px; text-align: center; }
 .fine { font-size: .85rem; opacity: .75; margin: 14px 0 0; text-align: center; }
 @media (max-width: 820px) { .donate-inner { grid-template-columns: 1fr; } }
 

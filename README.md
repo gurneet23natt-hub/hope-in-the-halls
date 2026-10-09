@@ -24,10 +24,7 @@ python3 -m http.server 8000
 
 Search `index.html` for `EDIT:` comments. Each marks content to replace:
 
-- [ ] Donation links: set each `href="#"` with `data-donate` to your donation page (Givebutter, Zeffy, PayPal Giving Fund, etc.)
 - [ ] If you're a registered 501(c)(3), uncomment the EIN line in the donate section
-- [ ] Contact email
-- [ ] Social media links in the footer
 - [ ] Logo in `assets/favicon.svg`, if you have one
 
 ### Receiving contact form messages
