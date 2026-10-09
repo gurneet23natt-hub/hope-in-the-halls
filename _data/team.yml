@@ -27,13 +27,16 @@ founders:
       through into something meaningful by bringing comfort, joy, and hope to
       their hospital stays.
 
-  - name: Founder Name
-    role: Co-Founder
-    photo:
-    linkedin: https://www.linkedin.com/in/your-profile/
+  - name: Alexis O'Brien
+    role: Founder
+    photo: /assets/team/alexis-obrien.jpg
+    linkedin: https://www.linkedin.com/in/alexis-o%E2%80%99brien-17b6b940b/
     bio: >-
-      Write a short "about me" here: who you are, what school or work you're
-      part of, and why you started Hope in the Halls.
+      Growing up surrounded by family with chronic illnesses from a young age
+      deeply shaped my perspective on life and inspired me to create Hope in
+      the Halls. I strongly believe that every child deserves access to the
+      support, resources, and opportunities they need to pursue their goals
+      and reach their full potential.
 
 core_team:
   - name: Allison Montoya-Sanchez
