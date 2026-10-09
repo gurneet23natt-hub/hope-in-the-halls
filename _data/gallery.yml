@@ -1,0 +1,33 @@
+# Photos shown in the "From our last toy drive" section on the homepage.
+# Upload photos to assets/toy-drive/ (a full-size one and a smaller -thumb one),
+# then list them here in the order you want them shown.
+# `alt` describes the photo for people using screen readers.
+#
+# Never post photos that show patients unless the hospital and family
+# have given written permission.
+
+title: From our last toy drive
+intro: >-
+  Toys donated by our community, packed up and delivered to pediatric
+  patients at Kaiser Permanente Roseville.
+# Optional thank-you shown under the photos. Delete the line to hide it.
+thanks: >-
+  A big thank you to the Westlake Charter High School Key Club for donating
+  cards for our toy drive!
+photos:
+  - src: /assets/toy-drive/packed-car.jpg
+    thumb: /assets/toy-drive/packed-car-thumb.jpg
+    caption: A car packed full of donated toys
+    alt: The back of a car filled with bags and boxes of donated toys, including a bag labeled "To Hope in the Halls"
+  - src: /assets/toy-drive/arriving.jpg
+    thumb: /assets/toy-drive/arriving-thumb.jpg
+    caption: Arriving at the hospital
+    alt: Hospital building with a green sign pointing to the hospital and Women & Children's
+  - src: /assets/toy-drive/elevator.jpg
+    thumb: /assets/toy-drive/elevator-thumb.jpg
+    caption: Heading up with the donations
+    alt: Volunteers in an elevator with a wagon and bags full of toys
+  - src: /assets/toy-drive/delivered.jpg
+    thumb: /assets/toy-drive/delivered-thumb.jpg
+    caption: Delivered and ready for patients
+    alt: A red wagon and bags overflowing with toys, games, and a toy hard hat

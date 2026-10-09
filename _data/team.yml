@@ -1,0 +1,74 @@
+# ─────────────────────────────────────────────────────────────
+# People shown on the "Our Team" page, one list per tab:
+#   founders · core_team · leadership_committee · ambassadors
+#
+# For each person:
+#   name:      Full name
+#   role:      Title (e.g. Co-Founder, Ambassador – Roseville High)
+#   photo:     Upload a square-ish image to assets/team/ and put its path,
+#              e.g. /assets/team/jane-doe.jpg. Leave blank to show initials.
+#   linkedin:  Full LinkedIn profile URL. Leave blank to hide the button.
+#   bio:       A short "about me".
+#
+# To add someone, copy a block (from "- name:" to "bio:") and edit it.
+# A tab with no one in it shows a "coming soon" message.
+# ─────────────────────────────────────────────────────────────
+
+founders:
+  - name: Gianna Natt
+    role: Founder
+    photo: /assets/team/gianna-natt.jpg
+    linkedin: https://www.linkedin.com/in/gianna-natt-888695425/
+    bio: >-
+      Living with a chronic illness and spending so much time in hospitals often
+      made me feel lonely and disconnected from life outside my hospital room.
+      Those experiences inspired me to start Hope in the Halls so I could help
+      other children feel supported and less alone. I wanted to turn what I went
+      through into something meaningful by bringing comfort, joy, and hope to
+      their hospital stays.
+
+  - name: Founder Name
+    role: Co-Founder
+    photo:
+    linkedin: https://www.linkedin.com/in/your-profile/
+    bio: >-
+      Write a short "about me" here: who you are, what school or work you're
+      part of, and why you started Hope in the Halls.
+
+core_team:
+  - name: Team Member
+    role: Volunteer Coordinator
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+  - name: Team Member
+    role: Blog Editor
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+  - name: Team Member
+    role: Outreach Lead
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+leadership_committee:
+  - name: Committee Member
+    role: Leadership Committee
+    photo:
+    linkedin:
+    bio: One or two sentences about this person.
+
+ambassadors:
+  # Ambassadors show their high school only (no bio).
+  - name: Anshu Gonuguntla
+    role: Pleasant Grove High School
+    photo: /assets/team/anshu-gonuguntla.jpg
+    linkedin: https://www.linkedin.com/in/anshu-gonuguntla-52a3b9351/
+
+  - name: Savannah Sangha
+    role: Folsom High School
+    photo: /assets/team/savannah-sangha.jpg
+    linkedin:

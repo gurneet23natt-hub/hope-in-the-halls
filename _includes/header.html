@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <img src="{{ '/assets/logo-wordmark.png' | relative_url }}" alt="Hope in the Halls" width="97" height="62">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Menu</span>
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#projects' | relative_url }}">Projects</a>
+      <a href="{{ '/team/' | relative_url }}"{% if page.url == '/team/' %} aria-current="page"{% endif %}>Our Team</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+      <a href="{{ '/#involved' | relative_url }}">Get Involved</a>
+      <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      <a href="{{ site.gofundme }}" class="btn btn-small" target="_blank" rel="noopener">Donate</a>
+    </nav>
+  </div>
+</header>
