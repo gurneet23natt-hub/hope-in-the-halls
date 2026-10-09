@@ -62,8 +62,13 @@ leadership_committee:
     bio: One or two sentences about this person.
 
 ambassadors:
-  - name: Ambassador Name
-    role: Ambassador
-    photo:
+  # Ambassadors show their high school only (no bio).
+  - name: Anshu Gonuguntla
+    role: Pleasant Grove High School
+    photo: /assets/team/anshu-gonuguntla.jpg
+    linkedin: https://www.linkedin.com/in/anshu-gonuguntla-52a3b9351/
+
+  - name: Savannah Sangha
+    role: Folsom High School
+    photo: /assets/team/savannah-sangha.jpg
     linkedin:
-    bio: One or two sentences about this person.

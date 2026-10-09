@@ -221,5 +221,6 @@ p { margin: 0 0 1em; }
 .copyright { grid-column: 1 / -1; border-top: 1px solid rgba(255, 255, 255, .12); padding-top: 20px; margin: 8px 0 0; }
 @media (max-width: 600px) { .footer-inner { grid-template-columns: 1fr; } }
 
-/* Founder photos: tall rounded rectangle so full-length photos fit */
-.person-large img.avatar { width: 100%; max-width: 340px; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius); object-fit: cover; object-position: top; }
+/* Real photos: tall rounded rectangle so full-length photos fit */
+.person img.avatar { width: 100%; max-width: 260px; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius); object-fit: cover; object-position: top; }
+.person-large img.avatar { max-width: 340px; }
