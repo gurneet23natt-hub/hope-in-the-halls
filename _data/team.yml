@@ -36,23 +36,10 @@ founders:
       part of, and why you started Hope in the Halls.
 
 core_team:
-  - name: Team Member
-    role: Volunteer Coordinator
-    photo:
-    linkedin:
-    bio: One or two sentences about this person.
-
-  - name: Team Member
-    role: Blog Editor
-    photo:
-    linkedin:
-    bio: One or two sentences about this person.
-
-  - name: Team Member
-    role: Outreach Lead
-    photo:
-    linkedin:
-    bio: One or two sentences about this person.
+  - name: Allison Montoya-Sanchez
+    role: Fundraising Task Coordinator
+    photo: /assets/team/allison-montoya-sanchez.jpg
+    linkedin: https://www.linkedin.com/in/allison-montoya-49b76b442/
 
 leadership_committee:
   - name: Committee Member
@@ -71,4 +58,14 @@ ambassadors:
   - name: Savannah Sangha
     role: Folsom High School
     photo: /assets/team/savannah-sangha.jpg
+    linkedin:
+
+  - name: Hannah Celigjia
+    role: Westlake Charter High School
+    photo:
+    linkedin: https://www.linkedin.com/in/hannah-celigija-a4b705442/
+
+  - name: Lili Ervin
+    role: Vista Del Lago High School
+    photo:
     linkedin:

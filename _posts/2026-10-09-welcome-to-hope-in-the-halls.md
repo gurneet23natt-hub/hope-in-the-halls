@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Hope in the Halls"
-author: The Hope in the Halls Team
+author: the Hope in the Halls Team
 category: Blog
 ---
 
