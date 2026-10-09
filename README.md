@@ -6,7 +6,7 @@ Website for Hope in the Halls, a nonprofit organization. It's a plain HTML/CSS/J
 
 | File | What it is |
 | --- | --- |
-| `index.html` | All page content (About, Programs, Impact, Get Involved, Donate, Contact) |
+| `index.html` | All page content (Mission, Projects, Get Involved, Blog, Donate, Contact) |
 | `styles.css` | Styling. Brand colors and fonts are at the top under `:root` |
 | `script.js` | Mobile menu and footer year |
 | `assets/favicon.svg` | Logo / browser tab icon |
@@ -24,12 +24,9 @@ python3 -m http.server 8000
 
 Search `index.html` for `EDIT:` comments. Each marks content to replace:
 
-- [ ] Mission statement and founding story
-- [ ] Program names and descriptions
-- [ ] Impact numbers (currently `0`) and the testimonial quote
 - [ ] Donation links: set each `href="#"` with `data-donate` to your donation page (Givebutter, Zeffy, PayPal Giving Fund, etc.)
-- [ ] EIN in the donate section (or delete that line), and confirm your 501(c)(3) status wording
-- [ ] Contact email and mailing address
+- [ ] If you're a registered 501(c)(3), uncomment the EIN line in the donate section
+- [ ] Contact email
 - [ ] Social media links in the footer
 - [ ] Logo in `assets/favicon.svg`, if you have one
 

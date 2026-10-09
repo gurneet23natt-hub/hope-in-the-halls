@@ -112,16 +112,6 @@ p { margin: 0 0 1em; }
 .text-link { font-weight: 600; text-decoration: none; }
 .text-link:hover { text-decoration: underline; }
 
-/* ---------- Impact ---------- */
-.stats { list-style: none; padding: 0; margin: 36px 0 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; }
-.stats li { border-top: 3px solid var(--accent); padding-top: 16px; }
-.stat-num { display: block; font-family: var(--font-head); font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 700; color: var(--primary); line-height: 1; }
-.stat-label { color: var(--muted); }
-.quote { margin: 0; max-width: 780px; border-left: 4px solid var(--primary); padding: 8px 0 8px 28px; }
-.quote blockquote { margin: 0; font-family: var(--font-head); font-size: clamp(1.3rem, 2.6vw, 1.75rem); line-height: 1.4; }
-.quote figcaption { color: var(--muted); margin-top: 10px; }
-.quote figcaption::before { content: "— "; }
-
 /* ---------- Donate ---------- */
 .donate { background: var(--primary); color: #e9f1f3; }
 .donate h2 { color: #fff; }
@@ -153,3 +143,6 @@ p { margin: 0 0 1em; }
 .social a:hover { color: var(--accent); }
 .copyright { grid-column: 1 / -1; border-top: 1px solid rgba(255, 255, 255, .12); padding-top: 20px; margin: 8px 0 0; }
 @media (max-width: 600px) { .footer-inner { grid-template-columns: 1fr; } }
+
+.section-intro { color: var(--muted); font-size: 1.1rem; max-width: 640px; margin-top: -.25em; }
+.link-light { color: var(--accent); }
