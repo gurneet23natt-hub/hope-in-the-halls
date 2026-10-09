@@ -41,7 +41,7 @@ You can publish straight from the GitHub website. No software to install.
 3. Use it as a cover with `image: /assets/blog/toy-drive.jpg`, or inside your post with:
 
    ```markdown
-   ![Describe the photo](/hope-in-the-halls/assets/blog/toy-drive.jpg)
+   ![Describe the photo](/assets/blog/toy-drive.jpg)
    ```
 
 **Please don't post photos of patients or anything that shows a hospital patient's face, name, or room** unless the hospital and family have given written permission.

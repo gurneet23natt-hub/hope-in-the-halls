@@ -26,18 +26,30 @@ People are grouped by tab: `founders`, `core_team`, `leadership_committee`, `amb
 
 ## Publishing with GitHub Pages
 
+The site lives at **https://hopeinthehalls.org**. The domain is registered at Namecheap; the `CNAME` file in this repo tells GitHub Pages to use it.
+
 1. Merge this branch into `main`.
 2. On GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**, branch `main`, folder `/ (root)`, then Save.
-3. The site goes live at `https://gurneet23natt-hub.github.io/hope-in-the-halls/` within a couple of minutes.
+3. Under **Custom domain**, make sure it says `hopeinthehalls.org`, then tick **Enforce HTTPS** once it becomes available.
 
-**Custom domain:** if you buy a domain like `hopeinthehalls.org`, enter it in the Pages settings, then change `baseurl` in `_config.yml` to `""` and `url` to your domain.
+### Namecheap DNS settings (Domain List → Manage → Advanced DNS)
+
+Delete the default parking-page records, then add:
+
+| Type | Host | Value |
+| --- | --- | --- |
+| A Record | `@` | `185.199.108.153` |
+| A Record | `@` | `185.199.109.153` |
+| A Record | `@` | `185.199.110.153` |
+| A Record | `@` | `185.199.111.153` |
+| CNAME Record | `www` | `gurneet23natt-hub.github.io.` |
 
 ## Previewing locally (optional)
 
 ```sh
 bundle install
 bundle exec jekyll serve
-# visit http://localhost:4000/hope-in-the-halls/
+# visit http://localhost:4000/
 ```
 
 ## Contact form

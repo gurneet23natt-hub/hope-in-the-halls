@@ -9,10 +9,9 @@ gofundme: https://gofund.me/ee142f303
 ein: 42-4466539
 location: Sacramento, CA
 
-# The site is served from https://gurneet23natt-hub.github.io/hope-in-the-halls/
-# If you move to a custom domain (e.g. hopeinthehalls.org), change baseurl to "".
-url: https://gurneet23natt-hub.github.io
-baseurl: /hope-in-the-halls
+# The site is served from https://hopeinthehalls.org (see the CNAME file).
+url: https://hopeinthehalls.org
+baseurl: ""
 
 permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
