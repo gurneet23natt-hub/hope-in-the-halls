@@ -50,6 +50,11 @@ leadership_committee:
     photo: /assets/team/sartaj-mutti.jpg
     linkedin:
 
+  - name: Jovan Venethongkham
+    role:
+    photo: /assets/team/jovan-venethongkham.jpg
+    linkedin:
+
 ambassadors:
   # Ambassadors show their high school only (no bio).
   - name: Anshu Gonuguntla
