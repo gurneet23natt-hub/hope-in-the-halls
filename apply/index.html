@@ -1,0 +1,41 @@
+---
+layout: default
+title: Applications
+permalink: /apply/
+description: Apply to volunteer, become an ambassador, or join the Hope in the Halls team.
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Applications</p>
+    <h1>Join Hope in the Halls</h1>
+    <p class="lead">Ready to make a difference? Choose an application below. Each one opens a short Google Form, and we'll reach out after we review it.</p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cards apply-cards">
+      {% for a in site.data.applications %}
+      <article class="card apply-card{% unless a.form %} is-closed{% endunless %}">
+        <p class="apply-status">{% if a.form %}Open{% else %}Opening soon{% endif %}</p>
+        <h3>{{ a.title }}</h3>
+        <p>{{ a.description }}</p>
+        {% if a.deadline %}<p class="apply-deadline"><strong>Deadline:</strong> {{ a.deadline }}</p>{% endif %}
+        {% if a.form %}
+          <a class="btn" href="{{ a.form }}" target="_blank" rel="noopener">Apply now</a>
+        {% else %}
+          <p class="apply-soon">Check back soon, or follow us on <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener">Instagram</a> for updates.</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-pink section-tight">
+  <div class="container join">
+    <h2>Questions?</h2>
+    <p>Not sure which role is right for you? We're happy to help.</p>
+    <a class="btn" href="mailto:{{ site.email }}?subject=Application%20Question">Email us</a>
+  </div>
+</section>
