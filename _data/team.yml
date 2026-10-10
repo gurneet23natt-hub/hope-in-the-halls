@@ -88,8 +88,8 @@ core_team:
 
   - name: Sydney Duong
     role: Social Media Editor
-    photo:
-    linkedin:
+    photo: /assets/team/sydney-duong.jpg
+    linkedin: https://www.linkedin.com/in/sydney-d-28785a442/
 
   - name: Evelyn Huynh
     role: Historian
