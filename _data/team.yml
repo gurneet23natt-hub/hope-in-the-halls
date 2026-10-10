@@ -139,7 +139,7 @@ leadership_committee:
 
   - name: Muskaan Sandhu
     role:
-    photo:
+    photo: /assets/team/muskaan-sandhu.jpg
     linkedin:
 
   - name: Abhijot Takhar
