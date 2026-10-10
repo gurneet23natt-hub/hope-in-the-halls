@@ -11,7 +11,7 @@
       <a href="{{ '/#about' | relative_url }}">About</a>
       <a href="{{ '/#projects' | relative_url }}">Projects</a>
       <a href="{{ '/team/' | relative_url }}"{% if page.url == '/team/' %} aria-current="page"{% endif %}>Our Team</a>
-      <a href="{{ '/events/' | relative_url }}"{% if page.url == '/events/' %} aria-current="page"{% endif %}>Events</a>
+      <a href="{{ '/events/' | relative_url }}"{% if page.url == '/events/' or page.url == '/calendar/' %} aria-current="page"{% endif %}>Events</a>
       <a href="{{ '/newsletter/' | relative_url }}"{% if page.url == '/newsletter/' %} aria-current="page"{% endif %}>Newsletter</a>
       <a href="{{ '/#involved' | relative_url }}">Get Involved</a>
       <a href="{{ '/#contact' | relative_url }}">Contact</a>

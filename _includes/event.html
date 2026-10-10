@@ -3,7 +3,7 @@
 {% capture start_t %}{{ day }} {{ e.start }}{% endcapture %}
 {% capture end_t %}{{ day }} {{ e.end }}{% endcapture %}
 {% capture cal_dates %}{{ e.date | date: "%Y%m%d" }}T{{ e.start | remove: ":" }}00/{{ e.date | date: "%Y%m%d" }}T{{ e.end | remove: ":" }}00{% endcapture %}
-<article class="event{% if include.compact %} event-compact{% endif %}" data-date="{{ day }}">
+<article class="event{% if include.compact %} event-compact{% endif %}" data-date="{{ day }}"{% unless include.compact %} id="{{ day }}-{{ e.title | slugify }}"{% endunless %}>
   <div class="event-date" aria-hidden="true">
     <span class="event-month">{{ e.date | date: "%b" }}</span>
     <span class="event-day">{{ e.date | date: "%-d" }}</span>
