@@ -73,8 +73,8 @@ core_team:
 
   - name: Anshika Bhatoa
     role: Newsletter Writer
-    photo:
-    linkedin:
+    photo: /assets/team/anshika-bhatoa.jpg
+    linkedin: https://www.linkedin.com/in/anshika-bhatoa-19ba42442/
 
   - name: Mahit Katyal
     role: Newsletter Writer
