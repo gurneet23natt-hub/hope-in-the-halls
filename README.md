@@ -8,7 +8,7 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 
 | To change… | Edit this |
 | --- | --- |
-| Email, Instagram, GoFundMe link, location | `_config.yml` |
+| Email, Instagram, GoFundMe link, location, visit counter (GoatCounter) | `_config.yml` |
 | Homepage text (mission, projects, donate, contact) | `index.html` |
 | Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
 | Events (fundraisers, drives) | `_data/events.yml`; flyers go in `assets/events/`. Past events hide automatically |

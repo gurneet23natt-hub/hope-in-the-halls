@@ -14,5 +14,6 @@
       <a href="mailto:{{ site.email }}">Email</a>
     </nav>
     <p class="copyright">© {{ 'now' | date: '%Y' }} Hope in the Halls · 501(c)(3) nonprofit · {{ site.location }}</p>
+    {% if site.goatcounter %}<p class="visit-count" data-counter="https://{{ site.goatcounter }}.goatcounter.com/counter/TOTAL.json" hidden></p>{% endif %}
   </div>
 </footer>

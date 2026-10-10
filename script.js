@@ -67,3 +67,16 @@ if (events.length) {
     if (!anyLeft && list.closest('.home-events')) list.closest('.home-events').hidden = true;
   });
 }
+
+// Footer: small total-visits counter from GoatCounter (stays hidden if unavailable)
+const visitCount = document.querySelector('.visit-count[data-counter]');
+if (visitCount) {
+  fetch(visitCount.dataset.counter)
+    .then((r) => (r.ok ? r.json() : Promise.reject()))
+    .then((d) => {
+      if (!d || !d.count) return;
+      visitCount.textContent = `👀 ${d.count} visits`;
+      visitCount.hidden = false;
+    })
+    .catch(() => {});
+}
