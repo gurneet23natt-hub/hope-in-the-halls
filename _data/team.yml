@@ -68,8 +68,8 @@ core_team:
 
   - name: Genesis Andrews
     role: Service Task Coordinator
-    photo:
-    linkedin:
+    photo: /assets/team/genesis-andrews.jpg
+    linkedin: https://www.linkedin.com/in/genesis-andrews-742869442/
 
   - name: Anshika Bhatoa
     role: Newsletter Writer
