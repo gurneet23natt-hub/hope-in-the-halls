@@ -144,8 +144,8 @@ leadership_committee:
 
   - name: Abhijot Takhar
     role:
-    photo:
-    linkedin:
+    photo: /assets/team/abhijot-takhar.jpg
+    linkedin: https://www.linkedin.com/in/abhijot-takhar-6bba42442/
 
 ambassadors:
   # Ambassadors show their high school only (no bio).
