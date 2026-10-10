@@ -1,0 +1,45 @@
+---
+layout: default
+title: Calendar
+permalink: /calendar/
+description: Calendar of upcoming Hope in the Halls fundraisers and events.
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Events</p>
+    <h1>Event Calendar</h1>
+    <p class="lead">See what's coming up. Tap an event for the details and flyer.</p>
+    <nav class="view-switch" aria-label="Event views">
+      <a href="{{ '/events/' | relative_url }}">List</a>
+      <a href="{{ '/calendar/' | relative_url }}" aria-current="page">Calendar</a>
+    </nav>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="cal" id="cal">
+      <div class="cal-head">
+        <button class="cal-nav" type="button" data-step="-1" aria-label="Previous month">‹</button>
+        <h2 class="cal-title" aria-live="polite"></h2>
+        <button class="cal-nav" type="button" data-step="1" aria-label="Next month">›</button>
+      </div>
+      <div class="cal-grid" role="grid" aria-labelledby="cal-title">
+        <div class="cal-dow" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+        <div class="cal-days"></div>
+      </div>
+      <h3 class="cal-list-title">This month</h3>
+      <ul class="cal-list"></ul>
+    </div>
+    <noscript>
+      <p>The calendar needs JavaScript. See the <a href="{{ '/events/' | relative_url }}">list of events</a> instead.</p>
+    </noscript>
+  </div>
+</section>
+
+{% assign events_sorted = site.data.events | sort: "date" %}
+<script id="cal-data" type="application/json">
+[{% for e in events_sorted %}{% assign day = e.date | date: "%Y-%m-%d" %}{% capture st %}{{ day }} {{ e.start }}{% endcapture %}{% capture en %}{{ day }} {{ e.end }}{% endcapture %}{% capture time %}{{ st | date: "%-I:%M %p" }} – {{ en | date: "%-I:%M %p" }}{% endcapture %}{% capture link %}{{ '/events/' | relative_url }}#{{ day }}-{{ e.title | slugify }}{% endcapture %}
+  {"date": {{ day | jsonify }}, "title": {{ e.title | jsonify }}, "kind": {{ e.kind | jsonify }}, "time": {{ time | jsonify }}, "place": {{ e.place | jsonify }}, "url": {{ link | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}
+]
+</script>

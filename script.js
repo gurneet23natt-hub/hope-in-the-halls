@@ -80,3 +80,54 @@ if (visitCount) {
     })
     .catch(() => {});
 }
+
+// Calendar page: month grid built from the events data
+const cal = document.getElementById('cal');
+if (cal) {
+  const events = JSON.parse(document.getElementById('cal-data').textContent);
+  const pad = (n) => String(n).padStart(2, '0');
+  const ymd = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const today = ymd(new Date());
+  const monthName = (d) => d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  // Open on the month of the next upcoming event, or this month if none
+  const next = events.find((e) => e.date >= today);
+  const start = next ? new Date(next.date + 'T12:00:00') : new Date();
+  let view = new Date(start.getFullYear(), start.getMonth(), 1);
+
+  const render = () => {
+    const y = view.getFullYear(), m = view.getMonth();
+    const key = `${y}-${pad(m + 1)}`;
+    cal.querySelector('.cal-title').textContent = monthName(view);
+    const days = cal.querySelector('.cal-days');
+    days.innerHTML = '';
+    const first = new Date(y, m, 1).getDay();
+    const count = new Date(y, m + 1, 0).getDate();
+    for (let i = 0; i < first; i++) days.insertAdjacentHTML('beforeend', '<div class="cal-day cal-empty" aria-hidden="true"></div>');
+    for (let d = 1; d <= count; d++) {
+      const date = `${key}-${pad(d)}`;
+      const todays = events.filter((e) => e.date === date);
+      const cls = ['cal-day', date === today ? 'is-today' : '', todays.length ? 'has-event' : '', date < today ? 'is-past' : ''].join(' ');
+      const items = todays.map((e) => `<a class="cal-event" href="${esc(e.url)}"><span class="cal-event-title">${esc(e.title)}</span></a>`).join('');
+      days.insertAdjacentHTML('beforeend', `<div class="${cls}"><span class="cal-num">${d}</span>${items}</div>`);
+    }
+    const list = cal.querySelector('.cal-list');
+    const monthEvents = events.filter((e) => e.date.startsWith(key));
+    list.innerHTML = monthEvents.length
+      ? monthEvents.map((e) => {
+          const d = new Date(e.date + 'T12:00:00');
+          const when = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+          return `<li><a href="${esc(e.url)}"><span class="cal-list-date">${esc(when)} · ${esc(e.time)}</span><strong>${esc(e.title)}</strong><span>${esc(e.place)}</span></a></li>`;
+        }).join('')
+      : '<li class="cal-none">No events this month. Check back soon!</li>';
+  };
+
+  cal.querySelectorAll('.cal-nav').forEach((btn) =>
+    btn.addEventListener('click', () => {
+      view = new Date(view.getFullYear(), view.getMonth() + Number(btn.dataset.step), 1);
+      render();
+    })
+  );
+  render();
+}
