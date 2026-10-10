@@ -78,8 +78,8 @@ core_team:
 
   - name: Mahit Katyal
     role: Newsletter Writer
-    photo:
-    linkedin:
+    photo: /assets/team/mahit-katyal.jpg
+    linkedin: https://www.linkedin.com/in/mahit-katyal-26b633278/
 
   - name: Cali Kim
     role: Social Media Editor
