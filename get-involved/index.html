@@ -1,0 +1,75 @@
+---
+layout: default
+title: Get Involved
+permalink: /get-involved/
+description: Volunteer with Hope in the Halls, earn service hours, and find ways to help pediatric patients in the Sacramento area.
+---
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Get involved</p>
+    <h1>There's a Place for You Here</h1>
+    <p class="lead">Students and community members are the heart of Hope in the Halls. Volunteer with us, earn service hours, and help bring comfort, joy, and hope to kids in the hospital.</p>
+    <div class="hero-actions">
+      <a class="btn" href="{{ '/apply/' | relative_url }}">See applications</a>
+      <a class="btn btn-ghost" href="#service-hours">Service hours</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-tight" id="ways">
+  <div class="container">
+    <h2>Ways to Help</h2>
+    <div class="cards">
+      <article class="card card-accent-pink">
+        <h3>Volunteer</h3>
+        <p>Help run toy drives, assemble care packages, write cards, and spread the word at events in your community.</p>
+        <a class="text-link" href="{{ '/apply/' | relative_url }}">Apply to volunteer →</a>
+      </article>
+      <article class="card card-accent-teal">
+        <h3>Write for Our Newsletter</h3>
+        <p>Share stories, project updates, and reflections that inspire others to bring hope to pediatric patients.</p>
+        <a class="text-link" href="{{ '/newsletter/' | relative_url }}">See the newsletter →</a>
+      </article>
+      <article class="card card-accent-pink">
+        <h3>Lead with Us</h3>
+        <p>Join our leadership committee or core team, or become an ambassador at your school.</p>
+        <a class="text-link" href="{{ '/apply/' | relative_url }}">See open applications →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-teal" id="service-hours">
+  <div class="container">
+    <p class="eyebrow">Service hours</p>
+    <h2>Service Hour Opportunities</h2>
+    <p class="section-intro">Volunteering with Hope in the Halls is a great way to earn community service hours for school, clubs, and honor societies while making a real difference for kids in the hospital.</p>
+
+    <div class="cards">
+      {% for o in site.data.service.opportunities %}
+      <article class="card">
+        <h3>{{ o.title }}</h3>
+        {% if o.when %}<p class="service-when">{{ o.when }}</p>{% endif %}
+        <p>{{ o.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="service-contact">
+      <div>
+        <h3>Questions About Service Hours?</h3>
+        <p>Email us to sign up for an opportunity, ask what's coming up, or get your hours verified. Please include:</p>
+        <ul>
+          <li>Your full name and school</li>
+          <li>Which opportunity you're interested in, or the dates and hours you volunteered</li>
+          <li>Any form your school or club needs signed</li>
+        </ul>
+      </div>
+      <div class="service-actions">
+        <a class="btn" href="mailto:{{ site.email }}?subject=Service%20Hours%20Question">Email us about service hours</a>
+        <p class="fine">{{ site.email }}</p>
+        <a class="text-link" href="{{ '/calendar/' | relative_url }}">See upcoming events →</a>
+      </div>
+    </div>
+  </div>
+</section>

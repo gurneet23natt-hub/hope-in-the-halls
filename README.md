@@ -12,6 +12,8 @@ Built with [Jekyll](https://jekyllrb.com), which GitHub Pages runs automatically
 | Homepage text (mission, projects, donate, contact) | `index.html` |
 | Our Team tabs (Founders, Core Team, Leadership Committee, Ambassadors): names, bios, photos, LinkedIn | `_data/team.yml` (photos go in `assets/team/`) |
 | Events (fundraisers, drives) | `_data/events.yml`; flyers go in `assets/events/`. Shown on both the Events list and the Calendar page. Past events hide from the list automatically |
+| Applications (Google Form links, deadlines) | `_data/applications.yml`. Leave `form:` blank to show "Opening soon" |
+| Service hour opportunities | `_data/service.yml` |
 | Toy drive photo gallery on the homepage | `_data/gallery.yml` (photos go in `assets/toy-drive/`) |
 | Newsletter | Written and sent on Substack (hopeinthehalls.substack.com). The signup form is embedded on the Newsletter page, and the latest issues are copied to `_data/newsletter_posts.json` every 3 hours by `.github/workflows/substack.yml` (run it now from **Actions → Sync Substack newsletter → Run workflow**) |
 | Menu and footer | `_includes/header.html`, `_includes/footer.html` |

@@ -1,0 +1,40 @@
+# ─────────────────────────────────────────────────────────────
+# Applications shown on the Applications page (/apply/).
+#
+# For each application:
+#   title:        Name of the application
+#   description:  One or two sentences about the role
+#   form:         Link to the Google Form. Leave blank to show
+#                 "Opening soon" instead of an Apply button.
+#   deadline:     Optional, e.g. "November 30, 2026"
+#
+# To close an application, delete its block or clear its `form` link.
+# ─────────────────────────────────────────────────────────────
+
+- title: Volunteer Application
+  description: >-
+    Sign up to help with toy drives, care packages, card writing, and events,
+    and earn service hours along the way.
+  form:
+  deadline:
+
+- title: Ambassador Application
+  description: >-
+    Represent Hope in the Halls at your school, spread the word, and help
+    organize drives in your community.
+  form:
+  deadline:
+
+- title: Leadership Committee Application
+  description: >-
+    Help plan projects, build partnerships, and shape where Hope in the
+    Halls goes next.
+  form:
+  deadline:
+
+- title: Core Team Application
+  description: >-
+    Take on a role like fundraising, service, newsletter writing, social
+    media, or historian when positions open up.
+  form:
+  deadline:

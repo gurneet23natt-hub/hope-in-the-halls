@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────
+# Service hour opportunities shown on the Get Involved page.
+# Add, remove, or edit items freely. `when` is optional.
+# For one-time shifts tied to an event, you can also list the event
+# in _data/events.yml so it appears on the Events page and Calendar.
+# ─────────────────────────────────────────────────────────────
+
+opportunities:
+  - title: Toy Drives
+    when: Seasonal
+    description: >-
+      Help collect, sort, and pack donated toys, games, and books, and get
+      them ready for delivery to pediatric patients.
+
+  - title: Care Package Assembly
+    when: Ongoing
+    description: >-
+      Put together care packages filled with comfort items for kids and
+      families going through a hospital stay.
+
+  - title: Cards and Notes
+    when: Ongoing, can be done from home
+    description: >-
+      Write cheerful cards and handwritten notes that go into care packages
+      and toy drive deliveries.
+
+  - title: Fundraisers and Events
+    when: See the events calendar
+    description: >-
+      Help out at fundraisers and community events by spreading the word,
+      setting up, and greeting supporters.
